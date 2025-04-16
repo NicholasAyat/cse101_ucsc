@@ -32,4 +32,4 @@ make
 Nicholas Ayat
 - University of California, Santa Cruz
 - Computer Science and Engineering
-- Class of 2024 
+- Class of 2026

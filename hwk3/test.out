@@ -1,0 +1,30 @@
+Vocabulary:
+transformer: 0
+mechanism: 2
+model: 3
+attention: 1
+embedding: 4
+layer: 5
+
+Enter sentence to tokenize (or Ctrl+D to exit):
+0 3 1 2 
+4 1 0 
+
+---------------------------------
+Test dictionary_insert:
+transformer: 0
+mechanism: 2
+model: 3
+hhhhhh: 666
+attention: 1
+embedding: 4
+layer: 5
+
+---------------------------------
+Test dictionary_delete:
+transformer: 0
+mechanism: 2
+model: 3
+attention: 1
+embedding: 4
+layer: 5

@@ -1,0 +1,32 @@
+Iteration 1: merging 'l' + 'o'
+Iteration 2: merging 'lo' + 'w'
+Iteration 3: merging 'e' + 's'
+Iteration 4: merging 'es' + 't'
+Iteration 5: merging 'est' + '</w>'
+Iteration 6: merging 'low' + '</w>'
+Iteration 7: merging 'low' + 'e'
+Iteration 8: merging 'lowe' + 'r'
+Iteration 9: merging 'lower' + '</w>'
+Iteration 10: merging 'n' + 'e'
+
+Vocabulary:
+a: 8
+d: 6
+e: 11
+</w>: 12
+lower</w>: 1
+g: 10
+i: 5
+l: 7
+low</w>: 0
+r: 9
+w: 3
+est</w>: 4
+ne: 2
+
+Enter sentence to tokenize (or Ctrl+D to exit):
+Word 'low': [low</w> -> 0] 
+Word 'lower': [lower</w> -> 1] 
+Word 'newest': [ne -> 2] [w -> 3] [est</w> -> 4] 
+Word 'widest': [w -> 3] [i -> 5] [d -> 6] [est</w> -> 4] 
+Word 'xxlow': [UNK(x)] [UNK(x)] [low</w> -> 0] 

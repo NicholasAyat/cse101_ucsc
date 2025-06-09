@@ -1,0 +1,11 @@
+cherry banana apple mango date fig peach 
+Inserted: apricot (id=7)
+cherry apricot apple banana mango date fig peach 
+Token already exists
+cherry apricot apple banana mango date fig peach 
+Found: cherry (id=4) (Depth: 0)
+Not found for the token durian
+Deleted: peach
+apple apricot banana cherry date fig mango 
+cherry apricot apple banana fig date mango 
+apple banana apricot date mango fig cherry 

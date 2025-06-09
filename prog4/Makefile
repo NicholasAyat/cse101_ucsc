@@ -1,8 +1,11 @@
-prog4: main.o bfs.o queue.o dijkstra.o
-	gcc -std=c99 -o prog4 main.o bfs.o queue.o dijkstra.o
+prog4: prog4.o VocabBST.o
+	gcc -o prog4 prog4.o VocabBST.o
 
-%.o: %.c
-	gcc -std=c99 -c -o $@ $<
+prog4.o: prog4.c VocabBST.h
+	gcc -c prog4.c
+
+VocabBST.o: VocabBST.c VocabBST.h
+	gcc -c VocabBST.c
 
 clean:
-	rm -f prog4 *.o
+	rm -f *.o prog4

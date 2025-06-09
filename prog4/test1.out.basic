@@ -1,0 +1,10 @@
+</w> a are hello world 
+Inserted: apple (id=5)
+</w> a are apple hello world 
+Token already exists
+</w> a are apple hello world 
+Found: are (id=2) (Depth: 2)
+Deleted: world
+</w> a are apple hello 
+</w> a apple are hello 
+apple hello are a </w> 

@@ -1,53 +1,55 @@
-# Program 4: Graph Traversal Algorithms
+# Program 4: Vocabulary BST/AVL
 
-This program implements two fundamental graph traversal algorithms: Breadth-First Search (BFS) and Dijkstra's algorithm, applied to a network of cities connected by railways.
+This program implements a vocabulary management system using a Binary Search Tree (BST). It supports inserting, deleting, finding, and traversing tokens. The project also includes a bonus implementation that uses a self-balancing AVL tree for the same operations.
 
-## Features
+## Basic Implementation (BST)
 
-- **BFS Implementation**: Finds shortest path in terms of number of cities traversed (uniform travel time)
-- **Dijkstra's Algorithm**: Finds shortest path in terms of actual travel time
-- **Bonus Task**: Displays shortest distances from vertex 0 to all vertices and from each vertex to vertex n-1
-
-## Input Format
-
-The program reads input from stdin in the following format:
-1. First line: filename containing city connections
-2. Subsequent lines: commands (0, 1, 2, or 3)
-
-City connection files (e.g., city1.in) contain:
-- First line: number of cities (N)
-- Second line: number of connections
-- Following lines: connections in format "u,v,w" (from city, to city, travel time)
-
-## Commands
-
-- `0`: Run BFS algorithm
-- `1`: Run Dijkstra's algorithm
-- `2`: Run bonus task
-- `3`: Exit program
-
-## Compilation
-
+### Compilation
+To compile the basic version, navigate to the `prog4` directory and use the provided Makefile:
 ```bash
-make clean
 make
 ```
+This will generate an executable named `prog4`.
 
-## Usage
-
+### Usage
+Run the program with an input file and redirect the output for verification:
 ```bash
-./prog4 < test1.in
+./prog4 < test1.in > my_test1.out
+```
+You can then compare your output with the provided `test1.out.basic` file:
+```bash
+diff my_test1.out test1.out.basic
 ```
 
-## Test Files
+## Bonus Implementation (AVL)
 
-- `test1.in`, `test2.in`, `test3.in`: Test input files
-- `city1.in`, `city2.in`, `city3.in`: City connection files
-- `test1.out`, `test2.out`, `test3.out`: Expected output files
+The bonus implementation uses an AVL tree to maintain a balanced vocabulary tree, resulting in faster search operations.
 
-## Implementation Details
+### Compilation
+To compile the bonus version, navigate to the `prog4/bonus` directory and use its Makefile:
+```bash
+cd bonus
+make
+```
+This will generate an executable named `bonus`.
 
-- Uses provided queue implementation for BFS
-- Implements Dijkstra's algorithm using array-based approach
-- Handles memory management properly
-- Includes error handling for file operations and memory allocation 
+### Usage
+From the `prog4/bonus` directory, run the program with the test inputs located in the parent directory:
+```bash
+./bonus < ../test1.in > my_test1.out.bonus
+```
+Compare your output with the provided bonus output file:
+```bash
+diff my_test1.out.bonus ../test1.out.bonus
+```
+
+## Cleaning Up
+To remove all compiled object files and executables from the `prog4` directory:
+```bash
+make clean
+```
+To clean the `bonus` directory, navigate to it and run:
+```bash
+cd bonus
+make clean
+``` 
